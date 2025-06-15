@@ -30,7 +30,7 @@ public class VisualizerFrame extends JFrame {
     private final int DEFAULT_SPEED = 20;
     private final int DEFAULT_SIZE = 20;
 
-    private final String[] Sorts = {"Bubble", "Selection", "Insertion", "Merge", "Radix LSD", "Radix MSD", "Bubble(fast)", "Selection(fast)", "Insertion(fast)","Quick","Quick(fast)"};
+    private final String[] Sorts = {"Bubble", "Selection", "Insertion", "Merge", "Bubble(fast)", "Selection(fast)", "Insertion(fast)","Quick","Quick(fast)"};
 
     private int sizeModifier;
 

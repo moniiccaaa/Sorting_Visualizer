@@ -61,6 +61,39 @@ public class SortingVisualizer {
                     sortingThread = new Thread(new BubbleSort(toBeSorted, frame, false));
                     break;
                     
+                case "Selection":
+                    sortingThread = new Thread(new SelectionSort(toBeSorted, frame, false));
+                    break;
+
+                case "Insertion":
+                    sortingThread = new Thread(new InsertionSort(toBeSorted, frame, false));
+                    break;
+
+                case "Merge":
+                    sortingThread = new Thread(new MergeSort());
+                    break;
+
+                case "Bubble(fast)":
+                    sortingThread = new Thread(new BubbleSort(toBeSorted, frame, true));
+                    break;
+
+                case "Selection(fast)":
+                    sortingThread = new Thread(new SelectionSort(toBeSorted, frame, true));
+                    break;
+
+                case "Insertion(fast)":
+                    sortingThread = new Thread(new InsertionSort(toBeSorted, frame, true));
+                    break;
+
+                case "Quick":
+                    sortingThread = new Thread(new QuickSort(toBeSorted, frame, false));
+                    break;
+
+                // Added case for Quick Sort (fast)
+                case "Quick(fast)":
+                    sortingThread = new Thread(new QuickSort(toBeSorted, frame, true));
+                    break;
+                    
                 default:
                     isSorting = false;
                     return;
